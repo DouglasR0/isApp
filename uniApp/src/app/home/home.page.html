@@ -1,0 +1,57 @@
+<ion-app>
+<ion-content>
+
+  <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>
+          Home
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+      
+        <ion-card>
+          <ion-row>
+            
+            <ion-col>
+              <ion-list id="courseList">
+                <ion-list-header>TODO</ion-list-header>
+    
+              </ion-list>
+            </ion-col>
+     
+            <ion-col>
+                <ion-list id="descList">
+    
+                </ion-list>
+            </ion-col>
+              
+              <ion-col>
+                <ion-list id="dateList">
+                  
+                </ion-list>
+              </ion-col>
+          
+            </ion-row>
+        </ion-card>
+        <ion-card>
+          <ion-item>
+            <ion-label position="floating">Course</ion-label>
+            <ion-input id="courseInput" type="text" hint="Course"></ion-input>
+          </ion-item>
+         
+          <ion-item>
+            <ion-label position="floating">Description</ion-label>
+            <ion-input id="descInput" type="text" hint="Description"></ion-input>
+          </ion-item>
+    
+          <ion-item>
+            <ion-input id="dateInput" type="date"></ion-input>
+          </ion-item>
+          <ion-button expand="block" (click)="addTask()">Add task</ion-button>
+        </ion-card>
+    
+      </ion-content>
+    </ion-app>
+    
+
